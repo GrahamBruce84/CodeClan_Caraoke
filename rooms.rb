@@ -26,10 +26,11 @@ class Rooms
   end
 
   def too_many_guests()
-    if @guests >= 3
+    if @guests <= 3
       return @guests.slice(4..50)
     end
   end
+  #This one clearly didnt work. The range in the .slice is questionable but not sure why the <= is coming up as an undefined method
 
 
 end
